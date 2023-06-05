@@ -6,7 +6,7 @@ The **`Ensembl_converter`** package is a Python library that allows you to conve
 
 You can install **`Ensembl_converter`** using pip:
 
-```shell
+```console
 pip install Ensembl_converter
 ```
 
@@ -36,6 +36,21 @@ print(result)
 ```
 
 This will output a DataFrame with two columns: ENSG (Ensembl IDs) and Symbol (gene symbols).
+
+The **`Ensembl_converter`** package can also be run directly from command line. To do this download the **`ensembl_converter_cli.py`** file.
+The pacakge can then be run in command line using the following command:
+
+```console
+python ensembl_converter_cli.py ENSG00000000457 ENSG00000273486 ENSG00000273493 --output result.csv --progress
+```
+This command will convert the provided Ensembl gene IDs and save the result to the specified output file (result.csv). If the --output option is omitted, the result will be printed to the console instead. The --progress option enables the progress bar during conversion.
+
+You can also provide the Ensembl gene IDs in a text file, with each ID on a separate line, and pass the file path instead of the IDs directly. For example:
+
+```console
+python ensembl_converter_cli.py ids.txt --output result.csv --progress
+```
+Replace **`ids.txt`** with the path to your text file containing the Ensembl gene IDs.
 
 ## **Options**
 The **`EnsemblConverter`** class supports the following options:
