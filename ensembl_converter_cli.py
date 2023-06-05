@@ -1,5 +1,5 @@
 import argparse
-from ensembl_converter import EnsemblConverter
+from Ensembl_converter import EnsemblConverter
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description='Ensembl ID Converter')
