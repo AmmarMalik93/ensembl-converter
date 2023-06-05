@@ -1,4 +1,4 @@
-# ***Ensembl_converter**
+# **Ensembl_converter**
 
 The **`Ensembl_converter`** package is a Python library that allows you to convert Ensembl IDs to gene symbols. It provides a simple and convenient way to retrieve gene symbols for a given list of Ensembl IDs using the Ensembl REST API.
 
